@@ -1,0 +1,54 @@
+body{
+    background-color: slategray;
+}
+h1{
+    color: #ffffff;
+    font-size: 80px;
+    font-family: fantasy;
+    text-align: center;
+    background-color: #0000ff;
+
+}
+h2, h3{
+    color: #ffffff;
+    font-size: 60px;
+    font-family: fantasy;
+    text-align: center;
+    background-color: #610593;
+
+}
+p{
+    line-height: 50px;
+    font-size: x-large;
+    background-color: beige; 
+}
+img{
+border: solid 5px #f75d00;
+padding: 10px;
+margin: 20px;
+border-top-right-radius: 30px;   
+background-color: beige; 
+}
+nav{
+    border: solid 2px green 
+}
+nav li{
+    display: inline-block;
+    height: 50px;
+}
+
+nav >a{
+    background-color: yellow;
+    padding: 5px;
+    margin: 20px
+}
+.thumbnail{
+border: 5px solid darkviolet
+}
+#mainContent{
+    position: absolute;
+    left: -500px;
+}
+#mainContent:focus{
+
+}
