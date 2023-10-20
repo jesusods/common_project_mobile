@@ -23,9 +23,15 @@ p{
     background-color: beige; 
 }
 img{
+width: 100%;
+height: 100%;
+display: grid;
 border: solid 5px #f75d00;
 padding: 10px;
-margin: 20px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 20px;
+margin-bottom: 20px;
 border-top-right-radius: 30px;   
 background-color: beige; 
 }
@@ -49,6 +55,69 @@ border: 5px solid darkviolet
     position: absolute;
     left: -500px;
 }
-#mainContent:focus{
 
+#mainContent:focus{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ffffff;  
 }
+.two_pictures{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.item1{
+    width: 100vw;
+    height: 50vh;
+    grid-area: 1 / 1;
+}
+.item2{
+    width: 100vw;
+    height: 50vh;
+    grid-area: 2 / 2;
+}
+
+.five_pictures{
+    display: grid;
+    grid-template-columns:0.1fr 1fr 0.1fr 1fr 0.1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    border: solid 5px gold;
+    border-top-right-radius: 30px;  
+}
+.item1_5{
+    height: 100%;
+    grid-area: 1 / 2;
+}
+.item2_5{
+    height: 100%;
+    grid-area: 1 / 4;
+}
+.item3_5{
+    height: 100%;
+    grid-area: 2 / 2;
+}
+.item4_5{
+    height: 100%;
+    grid-area: 2 / 4;
+}
+.item5_5{
+    height: 100%;
+    grid-area: 3 / 2 /  3 /  5;
+}
+.item1_5 div{
+    height: 75%;
+}
+.item2_5 div{
+    height: 75%;
+}
+.item3_5 div{
+    height: 75%;
+}
+.item4_5 div{
+    height: 75%;
+}
+.item5_5 div{
+    height: 75%;
+}
+
