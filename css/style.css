@@ -207,18 +207,34 @@ nav{
 .current{
     border-bottom: solid 1vh darkblue;
     background: lightblue;
+}
+.current_a{
     text-decoration: underline;
     text-decoration-color: #0000ff;
     text-decoration-thickness: 0.5vh;
-   text-underline-offset: 0.5vh;
+    text-underline-offset: 0.5vh;
+    animation: underline_hidden 0.5s;
 }
+
 @keyframes nav_elements {
-    0% {max-height: min(1vh, 10px); text-decoration: none;}
-    20% {max-height: min(2vh, 20px); text-decoration: none; }
-    40% {max-height: min(3vh, 30px); text-decoration: none; }
-    60% {max-height: min(4vh, 40px); text-decoration: none; }
-    80% {max-height: min(5vh, 50px); text-decoration: none; }
-    100% {max-height: min(6vh, 60px); text-decoration: none;}
+    0% {max-height: min(1vh, 10px);}
+    20% {max-height: min(2vh, 20px);}
+    40% {max-height: min(3vh, 30px);}
+    60% {max-height: min(4vh, 40px);}
+    80% {max-height: min(5vh, 50px);}
+    100% {max-height: min(6vh, 60px);}
+}
+@keyframes underline_hidden {
+    0% {text-decoration: none;}
+    20% {text-decoration: none; }
+    40% {text-decoration: none; }
+    60% {text-decoration: none; }
+    80% {text-decoration: none; }
+    100% {text-decoration: underline;
+        text-decoration-color: #0000ff;
+        text-decoration-thickness: 0.5vh;
+        text-underline-offset: 0.5vh;
+    }
 }
 @media screen and (prefers-reduced-motion){
     nav li{
@@ -228,6 +244,9 @@ nav{
     
         background: none;
         color: #000;
+        animation: none;
+    }
+    nav li a{
         animation: none;
     }
     .two_pictures_travel{
@@ -246,4 +265,5 @@ nav{
         height: 85%;
         grid-area: 1 / 1;
     }
+    
 }
