@@ -19,14 +19,14 @@ h2, h3{
 }
 h4{
     color: #ffffff;
-    font-size: 3vw;
+    font-size: 3.5vw;
     font-family: fantasy;
     text-align: center;
     background-color: #0000ff;
 
 }
 p, span{
-    font-size: min(2vw, 19);
+    font-size: min(3vw, 19px);
     background-color: beige; 
 }
 img{
@@ -41,13 +41,6 @@ margin-top: 1vh;
 margin-bottom:  1vh;
 border-top-right-radius: 30px;   
 background-color: beige; 
-}
-nav{
-    border: solid 1vh green 
-}
-nav li{
-    display: inline-block;
-    height: 10vh;
 }
 
 nav >a{
@@ -65,21 +58,38 @@ border: 5px solid darkviolet
 
 #mainContent:focus{
     position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: #ffffff;  
+    top: 5vh;
+    left: 5vw;
+    background-color: #ffffff;
+    border: solid 1vh red;  
 }
 .two_pictures{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
+.two_pictures_travel{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
 .item1{
     width: 90%;
     height: 85%;
     grid-area: 1 / 1;
 }
+.gif{
+    width: 90%;
+    height: 85%;
+    grid-area: 1 / 1;
+}
 .item2{
+    width: 90%;
+    height: 85%;
+    grid-area: 2 / 2;
+}
+.item2_gif{
     width: 90%;
     height: 85%;
     grid-area: 2 / 2;
@@ -161,13 +171,13 @@ border: 5px solid darkviolet
 }
 .unordered_list{
     text-align: center;
-    font-size: 2vw;
+    font-size: min(3vw, 19px);;
     background-color: #000000;
     color: #ffffff; 
 }
 li{
     text-align: center;
-    font-size: 2vw;
+    font-size: min(3vw, 19px);;
     color: #ffffff;
     background-color: darkslategray;  
 }
@@ -177,9 +187,63 @@ ol{
     color: #ffffff;
     background-color: darkslategray;  
 }
+nav ul{
+    border: solid 5vh green;
+    columns: 3;
+}
 nav li{
-    display: inline-block;
-    height: 10vh;
+    height: min(6vh, 60px);
+    font-size: min(3.5vw, 19px);
+    text-align: center; 
+
     background: none;
     color: #000;
+    animation: nav_elements 0.5s;
+}
+
+nav{
+    background: lightyellow;
+}
+.current{
+    border-bottom: solid 1vh darkblue;
+    background: lightblue;
+    text-decoration: underline;
+    text-decoration-color: #0000ff;
+    text-decoration-thickness: 0.5vh;
+   text-underline-offset: 0.5vh;
+}
+@keyframes nav_elements {
+    0% {max-height: min(1vh, 10px); text-decoration: none;}
+    20% {max-height: min(2vh, 20px); text-decoration: none; }
+    40% {max-height: min(3vh, 30px); text-decoration: none; }
+    60% {max-height: min(4vh, 40px); text-decoration: none; }
+    80% {max-height: min(5vh, 50px); text-decoration: none; }
+    100% {max-height: min(6vh, 60px); text-decoration: none;}
+}
+@media screen and (prefers-reduced-motion){
+    nav li{
+        height: min(6vh, 60px);
+        font-size: min(3.5vw, 19px);
+        text-align: center; 
+    
+        background: none;
+        color: #000;
+        animation: none;
+    }
+    .two_pictures_travel{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+    .gif{
+        display: none;
+        width: 90%;
+        height: 85%;
+        grid-area: 1 / 1;
+    }
+    .item2_gif{
+        width: 90%;
+        height: 85%;
+        grid-area: 1 / 1;
+    }
 }
