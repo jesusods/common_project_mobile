@@ -9,7 +9,7 @@ h1{
     background-color: #0000ff;
 
 }
-h2, h3{
+h2, h3, h4{
     color: #ffffff;
     font-size: 4vw;
     font-family: fantasy;
@@ -17,7 +17,7 @@ h2, h3{
     background-color: #610593;
 
 }
-p{
+p, span{
     font-size: 2vw;
     background-color: beige; 
 }
@@ -67,16 +67,25 @@ border: 5px solid darkviolet
     grid-template-rows: 1fr 1fr;
 }
 .item1{
-    width: 100vw;
-    height: 50vh;
+    width: 90%;
+    height: 90%;
     grid-area: 1 / 1;
 }
 .item2{
-    width: 100vw;
-    height: 50vh;
+    width: 90%;
+    height: 90%;
     grid-area: 2 / 2;
 }
-
+.item3{
+    width: 90%;
+    height: 90%;
+    grid-area: 2 / 1;
+}
+.item4{
+    width: 90%;
+    height: 90%;
+    grid-area: 1 / 2;
+}
 .five_pictures{
     display: grid;
     grid-template-columns:0.1fr 1fr 0.1fr 1fr 0.1fr;
@@ -120,3 +129,38 @@ border: 5px solid darkviolet
     height: 75%;
 }
 
+.three_pictures{
+    display: grid;
+    grid-template-columns:0.1fr 1fr 0.1fr 1fr 0.1fr;
+    grid-template-rows: 1fr 1fr;
+    border: solid 5px gold;
+    border-top-right-radius: 30px;  
+}
+
+.item1_3{
+    height: 100%;
+    grid-area: 1 / 2;
+}
+.item2_3{
+    height: 100%;
+    grid-area: 1 / 4;
+}
+.item3_3{
+    margin-top: 4vh;
+
+    height: 90%;
+    grid-area: 2 / 2 /  2 /  5;
+}
+.unordered_list{
+    text-align: center;
+    font-size: 2vw;
+    background-color: #000000;
+    color: #ffffff; 
+}
+
+ol{
+    text-align: center;
+    font-size: 2vw;
+    color: #ffffff;
+    background-color: orange; 
+}
