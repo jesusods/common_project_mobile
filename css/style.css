@@ -9,7 +9,7 @@ h1{
     background-color: #0000ff;
 
 }
-h2, h3, h4{
+h2, h3{
     color: #ffffff;
     font-size: 4vw;
     font-family: fantasy;
@@ -17,8 +17,16 @@ h2, h3, h4{
     background-color: #610593;
 
 }
+h4{
+    color: #ffffff;
+    font-size: 3vw;
+    font-family: fantasy;
+    text-align: center;
+    background-color: #0000ff;
+
+}
 p, span{
-    font-size: 2vw;
+    font-size: min(2vw, 19);
     background-color: beige; 
 }
 img{
