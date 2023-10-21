@@ -169,13 +169,13 @@ li{
     text-align: center;
     font-size: 2vw;
     color: #ffffff;
-    background-color: orange;  
+    background-color: darkslategray;  
 }
 ol{
     text-align: center;
     font-size: 2vw;
     color: #ffffff;
-    background-color: orange; 
+    background-color: darkslategray;  
 }
 nav li{
     display: inline-block;
