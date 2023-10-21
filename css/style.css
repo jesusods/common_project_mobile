@@ -29,17 +29,17 @@ border: solid 5px #f75d00;
 padding: 10px;
 margin-left: auto;
 margin-right: auto;
-margin-top: 20px;
-margin-bottom: 20px;
+margin-top: 1vh;
+margin-bottom:  1vh;
 border-top-right-radius: 30px;   
 background-color: beige; 
 }
 nav{
-    border: solid 2px green 
+    border: solid 1vh green 
 }
 nav li{
     display: inline-block;
-    height: 50px;
+    height: 10vh;
 }
 
 nav >a{
