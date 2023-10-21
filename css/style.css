@@ -68,22 +68,22 @@ border: 5px solid darkviolet
 }
 .item1{
     width: 90%;
-    height: 90%;
+    height: 85%;
     grid-area: 1 / 1;
 }
 .item2{
     width: 90%;
-    height: 90%;
+    height: 85%;
     grid-area: 2 / 2;
 }
 .item3{
     width: 90%;
-    height: 90%;
+    height: 85%;
     grid-area: 2 / 1;
 }
 .item4{
     width: 90%;
-    height: 90%;
+    height: 85%;
     grid-area: 1 / 2;
 }
 .five_pictures{
@@ -157,10 +157,21 @@ border: 5px solid darkviolet
     background-color: #000000;
     color: #ffffff; 
 }
-
+li{
+    text-align: center;
+    font-size: 2vw;
+    color: #ffffff;
+    background-color: orange;  
+}
 ol{
     text-align: center;
     font-size: 2vw;
     color: #ffffff;
     background-color: orange; 
+}
+nav li{
+    display: inline-block;
+    height: 10vh;
+    background: none;
+    color: #000;
 }
