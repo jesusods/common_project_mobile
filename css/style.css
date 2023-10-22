@@ -230,11 +230,7 @@ nav{
     40% {text-decoration: none; }
     60% {text-decoration: none; }
     80% {text-decoration: none; }
-    100% {text-decoration: underline;
-        text-decoration-color: #0000ff;
-        text-decoration-thickness: 0.5vh;
-        text-underline-offset: 0.5vh;
-    }
+    100% {text-decoration: none;}
 }
 @media screen and (prefers-reduced-motion){
     nav li{
